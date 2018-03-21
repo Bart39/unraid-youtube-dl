@@ -2,7 +2,7 @@
 
 while true; do
 
-	youtube-dl --download-archive /config/archive -u "markshlhm03@gmail.com" -p "Pioneer1" --mark-watched -r 2M \
+	youtube-dl --download-archive /config/archive -u $USERNAME -p $PASSWORD --mark-watched -r 2M \
 	-i -o "/downloads/%(playlist_uploader)s/%(playlist_title)s/%(playlist_title)s - S01E0%(playlist_index)s - %(title)s [%(id)s].%(ext)s" \
 	-f bestvideo[ext=mp4]+bestaudio[ext=m4a] \
 	--merge-output-format mp4 --add-metadata --write-thumbnail \
