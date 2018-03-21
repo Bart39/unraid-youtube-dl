@@ -9,9 +9,11 @@ RUN \
  apt-get install -y \
 	locales \
 	python \
-	ruby \ 
+	ruby \
+	python-pip \
 	curl && \
- apt-get clean
+ apt-get clean && \
+ pip install --upgrade youtube_dl
 
 # Set the locale
 RUN sed -i -e 's/# en_GB.UTF-8 UTF-8/en_GB.UTF-8 UTF-8/' /etc/locale.gen && \
@@ -24,5 +26,6 @@ ENV LC_ALL en_GB.UTF-8
 COPY root/ /
 
 VOLUME /persistant
+VOLUME /config
 
 CMD start.sh

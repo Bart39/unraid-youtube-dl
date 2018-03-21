@@ -6,7 +6,7 @@ youtube-dl docker for Unraid. Primarily for music videos.
 
 * Just paste https://github.com/Bart39/unraid-templates into the docker/templates section on unraid
 
-* Click add container and select unraid-youtube-dl from the 4id3y subsection
+* Click add container and select unraid-youtube-dl from the bart39 subsection
 
 * Then fill out the fields as below
 
@@ -14,8 +14,4 @@ youtube-dl docker for Unraid. Primarily for music videos.
 
   * Download Location: Folder you require the container to download to. This maps to /persistent in the container.
 
-  * Playlist URL: The URL of your Youtube playlist
-
-  * Interval: How long you with the downloader to wait before checking your list again.
-  
-  * NFO: This is optional. It creates an NFO file to acompany the video. This is mainly for KODI
+  * Config Location: Folder you will store the configuration files in. This maps to /config in the container
