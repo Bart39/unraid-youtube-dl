@@ -11,6 +11,7 @@ RUN \
 	python \
 	ruby \
 	python-pip \
+	aria2 \
 	curl && \
  apt-get clean && \
  pip install --upgrade youtube_dl
